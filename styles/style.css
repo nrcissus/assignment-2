@@ -1,9 +1,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.quicksand-global {
+.quicksand {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
-  
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* .margin-lr { 
+    margin: 0px 141px 0px 141px;
+} */
+
+
+  /* Shared Style */
+
+.orange {
+    color: orange;
+}
+
+.sky-blue {
+    color: #2F80ED;
+}
+
+.cyan {
+    color: Cyan;
+}
+
+.indigo {
+    color: rgba(93, 88, 239, 1);
+}
+
+
+
+                                        /* Header Style */
+     /* Navigation */                                   
+section {
+    border: 1px solid black;
+}
+
+.navigation { /* Parent */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 62px;
+    height: 62px;
+}
+
+.navigation h1 {
+    max-width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+.menu { /* Center Menu item  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.menu > ul > li { /* Nav */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+ul { /* Remove Bullets */
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+    gap: 32px;
+    /* font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8rem; */
+}
+
+ul li a { /* Remove Underline */
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+.hamburger-menu { /* Hamburger Menu */
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0px;
+    border-radius: 5px;
+}
+
+.button-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btn {
+    width: 197px;
+    height: 50px;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: orange;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+}
+
+    /* Banner */
+.banner-container { /* Parent */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner > h1 {
+    max-width: 100%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    color: black;
+
+}
+
+.banner > p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 24px 0px;
+}
+
+.banner-img {
+    max-width: 100%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+}
+
+.enroll-btn {
+    width: 197px;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    padding: 10px 10px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+        /* Responsive */
+
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        background-color: white;
+        padding: 10px 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        margin: 16px 0px 16px 16px;
+    }
+
+    .hamburger-menu {
+        margin: 16px 16px 16px 0px;
+    }
+
+    .navigation {
+        align-items: center;
+    }
+
+    .navigation h1 {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner {
+        max-width: 100%;
+    }
+
+    .banner > h1 { /* Adjusting Font Size */
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+
+    .banner-img {
+        max-width: auto;
+    }
+
+    .button-1 {
+        display: none; /* Hide button */
+    }
+}
+
+
+/* Tablet Device */
+
+
+
+/* Desktop Device */
