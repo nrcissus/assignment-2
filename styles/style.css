@@ -40,9 +40,7 @@
 
                                         /* Header Style */
      /* Navigation */                                   
-section {
-    border: 1px dashed black;
-}
+
 
 .navigation { /* Parent */
     display: flex;
@@ -283,7 +281,7 @@ ul li a { /* Remove Underline */
         /* Our Stories */
 
 .container {
-    background: linear-gradient(to top, rgba(255, 244, 220, 1), rgba(173, 216, 230, 0)), 
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(173, 216, 230, 0)), 
     url(../assets/bg.png);
     background-size: cover;
     background-position: center;
@@ -344,14 +342,54 @@ ul li a { /* Remove Underline */
 
     /* Date Badge */
 .date-badge {
+    /* max-width: 100%;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 63%;
+    left: 35%;
+    transform: translate(-50%, -50%); */
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     color: white;
     font-size: 1rem;
 }
+.date-badge1 {
+    /* max-width: 100%;
+    position: absolute;
+    top: 63%;
+    left: 35%;
+    transform: translate(-50%, -50%); */
+    position: absolute;
+    bottom: 235px;
+    left: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+}
+
+/* .date-badge1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, 150%);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+} */
+
+/* .date-badge1 {
+    position: absolute;
+    top: 23.9rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+} */
 
 .badge-blue {
     background-color: rgba(60, 216, 232, 1);
@@ -401,7 +439,102 @@ ul li a { /* Remove Underline */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 80px 0px 60px 0px;
+    margin: 80px 0px 0px 0px;
+    padding-bottom: 60px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgba(149, 178, 38, 1);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: white;
+}
+
+.logo img {
+    width: 82px;
+    height: 82px;
+    /* color: rgba(255, 255, 255, 1); */
+}
+
+.description {
+    width: 400px;
+    height: 100px;
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 35px;
+}
+
+/* .footer-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+} */
+
+
+/* .footer-menu ul {
+    display: block;
+    gap: 20px;
+} */
+
+.menu-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.link {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.white {
+    gap: 200px;
+}
+
+.footer-menu h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer-links h2{
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    gap: 10px;
 }
 
 
@@ -476,10 +609,6 @@ ul li a { /* Remove Underline */
         line-height: 2.8rem;
     }
 
-    /* .banner > h1 .orange,
-    .banner > h1 .cyan {
-        display: block;
-    } */
 
     .banner-img {
         max-width: auto;
@@ -508,6 +637,48 @@ ul li a { /* Remove Underline */
         max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .story-card {
+        position: relative;
+    }
+
+    .date-badge {
+        /* max-width: 100%;
+        position: absolute; */
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        bottom: 125px;
+        left: 25px;
+        font-size: 0.875rem;
+    }
+
+    /* Footer */ /* Responsive Baki Ache */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo, .footer-menu, .footer-links {
+        width: 100%;
+        text-align:left;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .description {
+        text-align: left;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+
 }
 
 
