@@ -461,20 +461,20 @@ ul li a { /* Remove Underline */
     flex-direction: column;
 }
 
-.logo {
+.school-logo {
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
-.logo h1 {
+.school-logo h1 {
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 2.4rem;
     color: white;
 }
 
-.logo img {
+.school-logo img {
     width: 82px;
     height: 82px;
     /* color: rgba(255, 255, 255, 1); */
