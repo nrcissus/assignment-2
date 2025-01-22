@@ -46,7 +46,7 @@
 .marquee {
     width: 100%;
     overflow: hidden;
-    background-color: gainsboro;
+    background-color: rgba(255, 244, 220, 1);
     padding: 5px 0px;
     position: relative;
 }
@@ -172,7 +172,6 @@ ul li a { /* Remove Underline */
     font-weight: 700;
     line-height: 3.8rem;
     color: black;
-
 }
 
 .banner > p {
@@ -522,19 +521,6 @@ ul li a { /* Remove Underline */
     margin-top: 35px;
 }
 
-/* .footer-menu {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
-} */
-
-
-/* .footer-menu ul {
-    display: block;
-    gap: 20px;
-} */
-
 .menu-item ul {
     display: flex;
     flex-direction: column;
@@ -585,44 +571,37 @@ ul li a { /* Remove Underline */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
 
+    .marquee {
+        display: none;
+    }
+
     /* Navigation */
     .menu {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        background-color: white;
-        padding: 10px 0px;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        gap: 10px;
     }
 
     .logo img {
-        margin: 16px 0px 16px 16px;
+        /* margin: 16px 0px 16px 16px; */
+        width: 46px;
+        height: 46px;
     }
+    
 
     .hamburger-menu {
-        margin: 16px 16px 16px 0px;
-    }
-
-    .navigation {
-        align-items: center;
+        /* margin: 16px 16px 16px 0px; */
+        width: 30px;
+        height: 30px;
     }
 
     .navigation h1 {
         display: none;
     }
 
-    .hamburger-menu {
-        display: flex;
+    .navigation {
+        align-items: center;
     }
 
-    .menu.active {
+    .hamburger-menu {
         display: flex;
     }
 
@@ -639,10 +618,18 @@ ul li a { /* Remove Underline */
     }
 
     .banner > h1 { /* Adjusting Font Size */
-        font-size: 2.5rem;
-        line-height: 2.8rem;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
+    .banner > p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
 
     .banner-img {
         max-width: auto;
@@ -653,6 +640,14 @@ ul li a { /* Remove Underline */
     }
 
     /* Standard Curriculum */
+
+    .standard h1 {
+        font-size: 1.625rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
     .card-container {
         flex-direction: column;
     }
@@ -662,6 +657,17 @@ ul li a { /* Remove Underline */
     }
 
     /* Our Stories */
+
+    .container h1 {
+        font-size: 1.625rem;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .story-card {
+        position: relative;
+    }
 
     .left-article {
         display: none;
@@ -687,10 +693,11 @@ ul li a { /* Remove Underline */
         font-size: 0.875rem;
     }
 
-    /* Footer */ /* Responsive Baki Ache */
+    /* Footer */
     .footer-container {
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
 
     .footer-logo, .footer-menu, .footer-links {
@@ -698,12 +705,21 @@ ul li a { /* Remove Underline */
         text-align:left;
     }
 
-    .logo {
+    .link {
+        color: white;
+        font-size: 20px;
+        /* text-decoration: none; */
+        font-weight:600;
+    }
+
+    .school-logo {
         width: 250px;
     }
 
     .description {
         text-align: left;
+        width: 400px;
+        font-size: 1rem;
     }
 
     .footer-menu ul {
