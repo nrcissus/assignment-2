@@ -41,6 +41,36 @@
                                         /* Header Style */
      /* Navigation */                                   
 
+/* Marquee */ 
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: gainsboro;
+    padding: 5px 0px;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    width: 200%;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-content span {
+    width: 50%;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 
 .navigation { /* Parent */
     display: flex;
