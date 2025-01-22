@@ -25,7 +25,7 @@
 }
 
 .sky-blue {
-    color: rgb(47, 128, 237);
+    color: rgba(1, 172, 253, 1);
 }
 
 .cyan {
@@ -47,7 +47,8 @@
     width: 100%;
     overflow: hidden;
     background-color: rgba(255, 244, 220, 1);
-    padding: 5px 0px;
+    padding: 10px 0px;
+    border-radius: 5px;
     position: relative;
 }
 
@@ -60,6 +61,8 @@
 .marquee-content span {
     width: 50%;
     display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 @keyframes marquee {
@@ -169,8 +172,8 @@ ul li a { /* Remove Underline */
 .banner > h1 {
     max-width: 100%;
     font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 3.8rem;
+    font-weight:700;
+    line-height: 4rem;
     color: black;
 }
 
@@ -375,11 +378,6 @@ ul li a { /* Remove Underline */
 
     /* Date Badge */
 .date-badge {
-    /* max-width: 100%;
-    position: absolute;
-    top: 63%;
-    left: 35%;
-    transform: translate(-50%, -50%); */
     position: absolute;
     bottom: 125px;
     left: 20px;
@@ -389,11 +387,7 @@ ul li a { /* Remove Underline */
     font-size: 1rem;
 }
 .date-badge1 {
-    /* max-width: 100%;
-    position: absolute;
-    top: 63%;
-    left: 35%;
-    transform: translate(-50%, -50%); */
+   
     position: absolute;
     bottom: 286px;
     left: 20px;
@@ -402,27 +396,6 @@ ul li a { /* Remove Underline */
     color: white;
     font-size: 1rem;
 }
-
-/* .date-badge1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-200%, 150%);
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    color: white;
-    font-size: 1rem;
-} */
-
-/* .date-badge1 {
-    position: absolute;
-    top: 23.9rem;
-    left: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    color: white;
-    font-size: 1rem;
-} */
 
 .badge-blue {
     background-color: rgba(60, 216, 232, 1);
@@ -485,7 +458,7 @@ ul li a { /* Remove Underline */
 .footer-container {
     display: flex;
     justify-content: space-between;
-    padding: 140px;
+    padding: 10%;
 }
 
 .footer-logo {
@@ -559,23 +532,16 @@ ul li a { /* Remove Underline */
 
 
 
+                                                    /* RESPONSIVE */
 
-
-
-
-
-
-
-        /* Responsive */
-
-/* Mobile Device */
+            /* Mobile Device */
 @media screen and (max-width: 576px) {
 
     .marquee {
         display: none;
     }
 
-    /* Navigation */
+                                                    /* Navigation */
     .menu {
         display: none;
     }
@@ -586,7 +552,6 @@ ul li a { /* Remove Underline */
         height: 46px;
     }
     
-
     .hamburger-menu {
         /* margin: 16px 16px 16px 0px; */
         width: 30px;
@@ -605,7 +570,7 @@ ul li a { /* Remove Underline */
         display: flex;
     }
 
-    /* Banner */
+                                                    /* Banner */
 
     .banner-container {
         flex-direction: column-reverse;
@@ -639,7 +604,7 @@ ul li a { /* Remove Underline */
         display: none; /* Hide button */
     }
 
-    /* Standard Curriculum */
+                                                /* Standard Curriculum */
 
     .standard h1 {
         font-size: 1.625rem;
@@ -656,7 +621,7 @@ ul li a { /* Remove Underline */
         display: none;
     }
 
-    /* Our Stories */
+                                                    /* Our Stories */
 
     .container h1 {
         font-size: 1.625rem;
@@ -693,11 +658,15 @@ ul li a { /* Remove Underline */
         font-size: 0.875rem;
     }
 
-    /* Footer */
+    
+                                    /* Footer */
+    
+
     .footer-container {
         flex-direction: column;
         align-items: center;
         padding: 0px;
+        margin-left: 10px;
     }
 
     .footer-logo, .footer-menu, .footer-links {
@@ -710,7 +679,7 @@ ul li a { /* Remove Underline */
         font-size: 20px;
         /* text-decoration: none; */
         font-weight:600;
-    }
+    } 
 
     .school-logo {
         width: 250px;
@@ -721,13 +690,6 @@ ul li a { /* Remove Underline */
         width: 400px;
         font-size: 1rem;
     }
-
-    .footer-menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-    }
-
 
 }
 
